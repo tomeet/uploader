@@ -1,0 +1,27 @@
+{
+  "name": "tomeet/uploader",
+  "autoload": {
+    "psr-4": {
+      "Tomeet\\Uploader\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "tomeet",
+      "email": "tomeet@sohu.com"
+    }
+  ],
+  "require": {
+    "jiannei/laravel-response": "^4.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Tomeet\\Uploader\\UploaderServiceProvider"
+      ],
+      "aliases": {
+        "Uploader": "Tomeet\\Uploader\\Facades\\Uploader"
+      }
+    }
+  }
+}
